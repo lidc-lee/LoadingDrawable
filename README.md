@@ -255,3 +255,55 @@ public abstract class LoadingRenderer {
 ```
 invalidateSelf() 通过回调mCallback调用invalidateDrawable(null)触发LoadingDrawable重新绘制。 LoadingDrawable的重新绘制又会调用LoadingRenderer的draw(Canvas, Rect)方法，然后子类draw(Canvas, Rect)方法通过computeRender(float)计算的数据实现绘制。然后我们自定义XXXLoadingRenderer重写方法
 
+**展示如下：**
+
+![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/ShapeChangeDrawable.gif)
+![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/GoodsDrawable.gif)
+![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/AnimalDrawable.gif)
+![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/SceneryDrawable.gif)
+![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/CircleJumpDrawable.gif)
+![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/CircleRotateDrawable.gif)
+
+## LoadingRenderer Style
+
+#### ShapeChange
+ * CircleBroodLoadingRenderer
+ * CoolWaitLoadingRenderer
+
+#### Goods
+ * BalloonLoadingRenderer
+ * WaterBottleLoadingRenderer
+
+#### Animal
+ * FishLoadingRenderer
+ * GhostsEyeLoadingEyeRenderer
+
+#### Scenery
+ * ElectricFanLoadingRenderer
+ * DayNightLoadingRenderer
+
+#### Circle Jump
+ * CollisionLoadingRenderer
+ * SwapLoadingRenderer
+ * GuardLoadingRenderer
+ * DanceLoadingRenderer
+
+#### Circle Rotate
+ * WhorlLoadingRenderer
+ * MaterialLoadingRenderer
+ * GearLoadingRenderer
+ * LevelLoadingRenderer
+
+##使用
+
+ ```xml
+ <app.dinus.com.loadingdrawable.LoadingView
+    android:id="@+id/level_view"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#fff1c02e"
+    app:loading_renderer="LevelLoadingRenderer"/>
+  ```
+
+
