@@ -48,17 +48,7 @@ LoadingDrawable实现了什么 ？
 LoadingDraw able核心代码：
 
 ```
-    package app.dinus.com.loadingdrawable.render;
-
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
-import android.graphics.PixelFormat;
-import android.graphics.Rect;
-import android.graphics.drawable.Animatable;
-import android.graphics.drawable.Drawable;
-
-import app.dinus.com.loadingdrawable.render.LoadingRenderer;
-
+ 
 public class LoadingDrawable extends Drawable implements Animatable {
     private final LoadingRenderer mLoadingRender;
 
@@ -257,12 +247,12 @@ invalidateSelf() 通过回调mCallback调用invalidateDrawable(null)触发Loadin
 
 **展示如下：**
 
-![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/ShapeChangeDrawable.gif)
-![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/GoodsDrawable.gif)
-![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/AnimalDrawable.gif)
-![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/SceneryDrawable.gif)
-![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/CircleJumpDrawable.gif)
-![](https://raw.githubusercontent.com/dinuscxj/LoadingDrawable/master/Preview/CircleRotateDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/ShapeChangeDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/GoodsDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/AnimalDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/SceneryDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/CircleJumpDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/CircleRotateDrawable.gif)
 
 ## LoadingRenderer Style
 
