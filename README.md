@@ -247,12 +247,12 @@ invalidateSelf() 通过回调mCallback调用invalidateDrawable(null)触发Loadin
 
 **展示如下：**
 
-![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/ShapeChangeDrawable.gif)
-![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/GoodsDrawable.gif)
-![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/AnimalDrawable.gif)
-![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/SceneryDrawable.gif)
-![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/CircleJumpDrawable.gif)
-![](https://github.com/lidc-lee/LoadingDrawable/master/Preview/CircleRotateDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/tree/master/Preview/ShapeChangeDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/tree/master/Preview/GoodsDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/tree/master/Preview/AnimalDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/tree/master/Preview/SceneryDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/tree/master/Preview/CircleJumpDrawable.gif)
+![](https://github.com/lidc-lee/LoadingDrawable/tree/master/Preview/CircleRotateDrawable.gif)
 
 ## LoadingRenderer Style
 
