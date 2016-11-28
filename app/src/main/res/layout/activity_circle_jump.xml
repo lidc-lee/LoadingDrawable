@@ -16,15 +16,14 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#ffe9e4d1"
-            app:loading_renderer="CollisionLoadingRenderer" />
+            app:loading_renderer="CollisionLoadingRenderer"/>
 
         <app.dinus.com.loadingdrawable.LoadingView
             android:id="@+id/swap_view"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#ff9c0000"
-            app:loading_renderer="SwapLoadingRenderer" />
+            android:background="#ff9c0000"/>
     </LinearLayout>
 
     <LinearLayout

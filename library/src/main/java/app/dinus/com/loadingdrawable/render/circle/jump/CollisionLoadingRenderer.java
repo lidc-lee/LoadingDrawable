@@ -105,6 +105,7 @@ public class CollisionLoadingRenderer extends LoadingRenderer {
 
         for (int i = 0; i < mBallCount; i++) {
             //yMoveOffset = mBallQuadCoefficient * xMoveOffset ^ 2
+            //画第一个圆
             if (i == 0 && mStartXOffsetProgress != 0) {
                 float xMoveOffset = mBallMoveXOffsets * mStartXOffsetProgress;
                 float yMoveOffset = (float) (Math.pow(xMoveOffset, 2) * mBallQuadCoefficient);
@@ -120,7 +121,7 @@ public class CollisionLoadingRenderer extends LoadingRenderer {
                 canvas.drawOval(mOvalRect, mPaint);
                 continue;
             }
-
+            //最后一个圆
             if (i == mBallCount - 1 && mEndXOffsetProgress != 0) {
                 float xMoveOffset = mBallMoveXOffsets * mEndXOffsetProgress;
                 float yMoveOffset = (float) (Math.pow(xMoveOffset, 2) * mBallQuadCoefficient);

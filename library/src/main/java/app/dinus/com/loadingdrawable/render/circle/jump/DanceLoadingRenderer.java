@@ -22,7 +22,7 @@ public class DanceLoadingRenderer extends LoadingRenderer {
     private static final Interpolator ACCELERATE_INTERPOLATOR = new AccelerateInterpolator();
     private static final Interpolator DECELERATE_INTERPOLATOR = new DecelerateInterpolator();
 
-    private static final long ANIMATION_DURATION = 1888;
+    private static final long ANIMATION_DURATION = 3000;//延时
 
     private static final float DEFAULT_CENTER_RADIUS = 12.5f;
     private static final float DEFAULT_STROKE_WIDTH = 1.5f;
@@ -70,18 +70,18 @@ public class DanceLoadingRenderer extends LoadingRenderer {
     private final RectF mTempBounds = new RectF();
     private final RectF mCurrentBounds = new RectF();
 
-    private float mScale;
-    private float mRotation;
+    private float mScale; //缩放
+    private float mRotation; //旋转
     private float mStrokeInset;
 
-    private float mCenterRadius;
-    private float mStrokeWidth;
+    private float mCenterRadius; //中心半径
+    private float mStrokeWidth;  //圆环大小
     private float mDanceBallRadius;
     private float mShapeChangeWidth;
     private float mShapeChangeHeight;
 
-    private int mColor;
-    private int mArcColor;
+    private int mColor; //画笔颜色
+    private int mArcColor;//弧的颜色
 
     private DanceLoadingRenderer(Context context) {
         super(context);
@@ -278,7 +278,7 @@ public class DanceLoadingRenderer extends LoadingRenderer {
 
     private void setColor(int color) {
         mColor = color;
-        mArcColor = halfAlphaColor(mColor);
+        mArcColor = halfAlphaColor(mColor);//透明度化
     }
 
     private void setRotation(float rotation) {

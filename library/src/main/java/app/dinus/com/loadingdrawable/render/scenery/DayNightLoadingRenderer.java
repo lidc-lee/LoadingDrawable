@@ -162,10 +162,11 @@ public class DayNightLoadingRenderer extends LoadingRenderer {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setColor(mCurrentColor);
 
+        //画太阳
         if (mSunCoordinateY < mInitSun$MoonCoordinateY) {
             canvas.drawCircle(arcBounds.centerX(), mSunCoordinateY, mSun$MoonRadius, mPaint);
         }
-
+        //画月亮
         if (mMoonCoordinateY < mInitSun$MoonCoordinateY) {
             int moonSaveCount = canvas.save();
             canvas.rotate(mMoonRotation, arcBounds.centerX(), mMoonCoordinateY);
@@ -173,6 +174,7 @@ public class DayNightLoadingRenderer extends LoadingRenderer {
             canvas.restoreToCount(moonSaveCount);
         }
 
+        //画阳光
         for (int i = 0; i < mSunRayCount; i++) {
             int sunRaySaveCount = canvas.save();
             //rotate 45 degrees can change the direction of 0 degrees to 1:30 clock
@@ -184,7 +186,7 @@ public class DayNightLoadingRenderer extends LoadingRenderer {
             canvas.drawLine(arcBounds.centerX(), mSunRayStartCoordinateY, arcBounds.centerX(), mSunRayEndCoordinateY, mPaint);
             canvas.restoreToCount(sunRaySaveCount);
         }
-
+        //画星星
         if (mShowStar) {
             if (mStarHolders.isEmpty()) {
                 initStarHolders(arcBounds);
